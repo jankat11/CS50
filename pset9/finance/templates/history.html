@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    history
+{% endblock %}
+
+{% block main %}
+<div style="background-color: WhiteSmoke;">
+    <div class="mb-3" style="background-color: PowderBlue;">
+    <h3 style="font-family: Arial;">YOUR TRANSACTIONS FROM NEWEST TO OLDEST</h3>
+    </div>
+    <table class="table table-hover" style="background-color: Gainsboro;">
+        <thead>
+            <tr>
+                <th class="text-start">Symbol</th>
+                <th class="text-start">Company Name</th>
+                <th class="text-end">Share sell/buy</th>
+                <th class="text-end">Price</th>
+                <th class="text-end">Transaction ID</th>
+            </tr>
+        </thead>
+       <tbody>
+           {% for row in table %}
+                <tr>
+                    <td class="text-start">{{row.symbol}}</td>
+                    <td class="text-start">{{row.name}}</td>
+                    <td class="text-end">{{row.share}}</td>
+                    <td class="text-end">{{row.price | usd}}</td>
+                    <td class="text-end">{{row.no}}</td>
+                </tr>
+                {% endfor %}
+        </tbody>
+        </table>
+    </div>
+{% endblock %}
