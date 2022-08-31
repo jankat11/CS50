@@ -1,0 +1,4 @@
+// get height from user;
+// check its range 1-8
+// write code to go down amount of height
+// inside put another code each row adding 1

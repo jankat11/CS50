@@ -1,0 +1,11 @@
+sort1 uses: Bubble sort 
+
+How do you know?: It has best performance at sorted but reversed and random gone bad with 50000ttxt.
+
+sort2 uses: Merge sort
+
+How do you know?: Its avarage is same (0.4s) at sorted, reversed and random with 50000txt.
+
+sort3 uses: Selection sort
+
+How do you know?: Even sorted it spends approximately same time with reserved and has worsen performance compairing sort2 and sort1 for 50000txt.
